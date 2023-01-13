@@ -1,0 +1,24 @@
+Fanfei
+- Could spend some more time on the slide with the plot and the map
+    - On this slide, talk about the goal of the project, but dont put it in wirting.
+    - Then , the next slide can be all about the questions
+- Main motivation: Understanding the environemnt in which drug absuse occurs in queensland
+    - Add this to the slide about motivation
+- We got the police LGA data directly from the website, and we got the Census data as a Data Pack for LGA regions
+- The rest of the data there is not uncorrelated, we just didnt use it. Dont talk about this data
+
+James
+- We do two analysis, so it is not true that we aggregate it and do analysis on that
+- We do an analysis on the crime data, and then we do an analysis on the census data with aggreageted drug crime statistics
+
+Ruhan
+-  Dont list 10 fold cross validation with the models
+- We dont use CV to find the coefficients, we use it to tune the Lasso and Ridge Regression
+- Show what the alpha parameter is...
+    - Show the loss function and describe what ridge regression is for those who dont know
+
+Shawn
+- Must mention that we are looking at the top 10 and bottom 10 coefficients (because there are a lot of coefficients, we only look at these)!
+- We should use less coeffieicents for the census one, Ill make a new plot
+- Would probably not mention that areas with high number of foreigners are areas with a lot of drugs
+- Instead of talking over the plots, choose the variables which can best tell the story of what we are looking at
