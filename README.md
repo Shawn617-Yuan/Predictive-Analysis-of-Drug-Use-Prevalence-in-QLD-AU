@@ -1,4 +1,4 @@
-# The relationship between different crimes in Queensland
+# Understand the environment and factors in which drug use is prevalent in Queensland
 
 We have two datasets to work on ... the crime data by itself over time and the merged census data, which is aggregated to only include one observation per LGA in 2016. For each of these datasets, we want to fit the following models ...
 - Linear Regression [Fred]
