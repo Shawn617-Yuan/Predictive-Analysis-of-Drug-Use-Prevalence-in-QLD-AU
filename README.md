@@ -11,10 +11,6 @@ mse = sum((y_pred - y_actual)**2) # lowest mse
 
 - Poisson is difficult to do, but when done crudely it underperforms linear, so choose linear regression
 
-## Group project Git Repository
-
-I think this will be a great place to coordinate our project, and great for the resume later on ;)
-
 ## Google Drive
 All the Google Docs and meeting recordings are in the drive  
 [Link to the Google Drive](https://drive.google.com/drive/folders/1KvkitYDhhV8dDvRbm5zG50Ls9K-Xo2dA?usp=sharing)  
