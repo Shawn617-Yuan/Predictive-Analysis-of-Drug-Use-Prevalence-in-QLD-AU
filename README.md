@@ -1,11 +1,10 @@
 # Understand the environment and factors in which drug use is prevalent in Queensland
 
 We have two datasets to work on ... the crime data by itself over time and the merged census data, which is aggregated to only include one observation per LGA in 2016. For each of these datasets, we want to fit the following models ...
-- Linear Regression [Fred]
-- Lasso Regression (use 10-fold cross validation to find lambda parameter) [Paff]
-- Ridge Regression (use 10-fold cross validation to find lambda parameter) [James]
-- Poisson Regression (since the target is a count of incidences and may be Poisson distributed) [Shawn]
-- Any other models?
+- Linear Regression  
+- Lasso Regression (use 10-fold cross validation to find lambda parameter)  
+- Ridge Regression (use 10-fold cross validation to find lambda parameter)  
+- Poisson Regression (since the target is a count of incidences and may be Poisson distributed)  
 
 y_pred = b0 + b1 x1 + b2 x2 + ....
 mse = sum((y_pred - y_actual)**2) # lowest mse
