@@ -1,15 +1,36 @@
 # Understand the environment and factors in which drug use is prevalent in Queensland
 
-We have two datasets to work on ... the crime data by itself over time and the merged census data, which is aggregated to only include one observation per LGA in 2016. For each of these datasets, we want to fit the following models ...
-- Linear Regression  
-- Lasso Regression (use 10-fold cross validation to find lambda parameter)  
-- Ridge Regression (use 10-fold cross validation to find lambda parameter)  
-- Poisson Regression (since the target is a count of incidences and may be Poisson distributed)  
+## Project Overview:
+This project aims to understand the environmental and social factors contributing to drug use prevalence in Queensland. Using open crime data and census reports, the research explores correlations between drug use and various societal factors.
 
-y_pred = b0 + b1 x1 + b2 x2 + ....
-mse = sum((y_pred - y_actual)**2) # lowest mse
+## Data Sources:
+**Queensland LGA Vector Dataset:** Geographic information on Queensland Local Government Areas.
+**Queensland LGA Crime Rate Dataset:** Crime rates per capita across different LGAs from 2001 to 2021.
+**Australian Census Dataset (2016):** Population demographics and education levels, aggregated by LGA.
 
-- Poisson is difficult to do, but when done crudely it underperforms linear, so choose linear regression
+## Methodology:
+- Data preprocessing involved merging datasets and standardizing location names for compatibility.  
+- Focused on understanding the relationship between drug offences and factors such as crime types, age groups, and education levels.
+  
+Conducted regression analysis using the following models to identify the best-fitting model based on the mean squared error:
+1. Linear Regression  
+2. Lasso Regression (use 10-fold cross validation to find lambda parameter)  
+3. Ridge Regression (use 10-fold cross validation to find lambda parameter)  
+4. Poisson Regression (since the target is a count of incidences and may be Poisson distributed)
+
+## Key Insights:
+- Found strong correlations between drug offences and specific crimes like handling of stolen goods and liquor offences.
+- Identified demographic trends indicating higher drug use prevalence in areas with younger children and less educated individuals.
+- Highlighted the need for targeted law enforcement and educational strategies to address drug use in affected communities.
+
+## Recommendations:
+- Law enforcement agencies should focus on areas with a higher prevalence of specific crimes strongly correlated with drug use.
+- Develop targeted anti-drug education and community support initiatives, especially in communities with vulnerable demographics.
+- Policymakers should consider the insights from this analysis to inform more effective drug prevention and intervention strategies.
+
+## Future Work:
+- Extend the scope of the study to include more recent data and additional variables.
+- Explore the effectiveness of existing anti-drug policies and community programs on reducing drug-related offences.
 
 ## Google Drive
 All the Google Docs and meeting recordings are in the drive  
